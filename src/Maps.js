@@ -11,7 +11,7 @@ function Maps() {
 //     {
 //         console.warn("My Name in for loop :" , students[i])
 //     }
-
+////////////////We can't use for loop in return ///////////////////////////////////////////////////////////////
   return (
     <div className='box marginTop'>
         <h1>Handle Array with List</h1>
