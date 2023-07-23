@@ -1,19 +1,16 @@
 import React, { useEffect, useState } from "react";
+import User from "./User";
 
 function UseEffect() {
   const [data, setData] = useState(10);
   const [count, setCount] = useState(100);
 
-  useEffect(() => {
-    console.warn("UseEffect call");
-  });
 
   return (
     <div className="box">
-      <h1>Count : {count}</h1>
-      <button className="btn" onClick={() => setCount(count + 1)}>
-        Update Count
-      </button>
+      <User count = {count} data = {data}></User>
+      <button className="btn" onClick={() => setCount(count + 1)}>Update Count</button>
+      <button className="btn leftM" onClick={() => setData(count + 1)}>Update Data</button>
     </div>
   );
 }
