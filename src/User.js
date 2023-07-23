@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function User(props) {
 
   useEffect(() => {
-    alert(" count is" + props.count);
+    // alert(" count is" + props.count);
   },[props.count]);
 
   return (
